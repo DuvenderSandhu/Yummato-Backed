@@ -1,0 +1,81 @@
+#       Creating New Food Items
+
+
+POST http://localhost/partner/products HTTP/1.1
+content-type: application/json
+
+{
+    "itemsName":"Megharita Pizza with Cheese  ",
+    "type":"Snacks",
+    "price":99,
+    "quantity":10,
+    "images":[],
+    "ItemDesc": "This Pizza is made of garlic bread and and vegs on the top with cheese",
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiWVVNNzUxMDY3MzIxIiwiaWF0IjoxNjkwOTc4MjI1fQ.T0GoNIGkHRddGBb9oJvybWDTYj-3luyDmePquelD2U4"
+
+}
+
+        #    To Partner a new Shop
+# POST http://localhost/partner/shop HTTP/1.1
+# content-type: application/json
+
+# {
+#     "pincode":"175106",
+#     "shopname":"ALMA"
+# }
+
+
+#            To Register a new Shop
+# POST http://localhost/partner/register HTTP/1.1
+# content-type: application/json
+
+# {
+#     "shopID":"YUM751067321",
+#     "shopName":"ALMA",
+#     "ownerName":"admin",
+#     "images":[],
+#     "GSTIN":"012345678910",
+#     "shopDesc":"KFC is MNC",
+#     "address":"Near Red Fort Agra 1000",
+#     "mobile":"9876543210",
+#     "password":"admin",
+#     "type":"Food"
+# }
+
+
+#            To Login a new Shop
+# POST http://localhost/partner/login HTTP/1.1
+# content-type: application/json
+
+# {
+#     "shopID":"YUM751067321",
+#     "password":"admin",
+#     "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiWVVNNzUxMDY3MzIxIiwiaWF0IjoxNjkwOTc4MjI1fQ.T0GoNIGkHRddGBb9oJvybWDTYj-3luyDmePquelD2U4"
+# }
+
+#            To Products After Login
+# POST http://localhost/partner/products HTTP/1.1
+# content-type: application/json
+
+# {
+
+#     "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiWVVNNzUxMDY0ODM2IiwiaWF0IjoxNjg4NDcxMDA0fQ.wIg98HcXvJnS7wqru9E24HwCLVamyrsfcaAKoZKzmEs"
+# }
+
+
+#           To Retrieve the Food Item
+
+# GET http://localhost/orders/sonu sweets
+
+
+#           To Add Cart
+
+
+# POST http://localhost/orders HTTP/1.1
+# content-type: application/json
+
+# {
+#     "id":"64a01824c73677193cbaa889"
+# }
+
+# GET http://localhost/orders/YUM751064836
